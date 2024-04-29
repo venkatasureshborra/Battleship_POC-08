@@ -20,7 +20,8 @@ jobs:
         username: ${{ secrets.AZURE_VM_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
+          export PATH=$PATH:/home/venkat/.nvm/versions/node/v20.12.2/bin/npm
           cd /home/venkat/Battleship_POC-08/
           git pull origin master
-          npm -v
+          npm install
           npm run restart
