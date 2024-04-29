@@ -24,4 +24,4 @@ jobs:
           cd /home/venkat/Battleship_POC-08/
           git pull origin master
           npm install
-          npm run restart
+          npm run restart &
