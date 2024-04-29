@@ -23,5 +23,6 @@ jobs:
           export PATH=$PATH:/home/venkat/.nvm/versions/node/v20.12.2/bin
           cd /home/venkat/Battleship_POC-08/
           git pull origin master
+          pm2 stop 0
           npm install
-          npm run restart &
+          pm2 start server.js
